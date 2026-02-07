@@ -16,6 +16,7 @@ function RomanToInt(numeral : string): number{
             result += translate.get(curr)!;
         }
     }
+    //Get last occurrence because we skipped in the loop
     result += translate.get(numeral.charAt(size-1))!;
     return result;
 }
